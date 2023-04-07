@@ -21,12 +21,11 @@ function App() {
 
   return (
     <Layout title="SaaC.AI">
-      <div className="App text-3xl font-bold underline">
+      <div className="text-3xl font-bold">
         <p className="read-the-docs">
-          Click on the Vite and React logos to learn more
+          Write message to get started
         </p>
       </div>
-      <InputMessage/>
     </Layout>
   )
 }
