@@ -1,4 +1,5 @@
 import {PropsWithChildren} from 'react'
+import ChatListItem from '../components/chat/ChatListItem'
 
 interface LayoutProps {
   title: string | React.ReactNode
@@ -13,16 +14,21 @@ export default ({children, title}: PropsWithChildren<LayoutProps>) => (
         </h1>
       </div>
       <div className="flex-1 overflow-y-auto">
-        {/* Replace this with the list of chats */}
-        <div className="p-4 border-b border-gray-200">
-          <p className="font-semibold">Chat 1</p>
-        </div>
+        <ul role="list" className="p-6 divide-y divide-slate-200">
+          <ChatListItem
+            title="User 1"
+            subtitle="user@email.co"
+            image="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+          />
+          <ChatListItem
+            title="User 2"
+            subtitle="user@email.co"
+            image="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+          />
+        </ul>
       </div>
     </div>
     <div className="w-4/5 flex flex-col">
-      <div className="p-4 bg-white border-b border-gray-200 flex items-center">
-        <h2 className="text-xl font-semibold">Chat 1</h2>
-      </div>
       <div className="flex-1 bg-gray-50 overflow-y-auto p-4">
         {children}
       </div>
