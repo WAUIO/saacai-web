@@ -1,14 +1,16 @@
 import {PropsWithChildren} from 'react'
 
 interface LayoutProps {
-  
+  title: string | React.ReactNode
 }
 
-export default ({children}: PropsWithChildren<LayoutProps>) => (
+export default ({children, title}: PropsWithChildren<LayoutProps>) => (
   <div className="h-screen bg-gray-100 flex">
     <div className="w-1/5 bg-white border-r border-gray-200 flex flex-col">
       <div className="p-4 bg-blue-500 text-white">
-        <h1 className="text-xl font-semibold">Telegram</h1>
+        <h1 className="text-xl font-semibold">
+          {title}
+        </h1>
       </div>
       <div className="flex-1 overflow-y-auto">
         {/* Replace this with the list of chats */}
