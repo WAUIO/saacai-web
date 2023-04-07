@@ -19,7 +19,7 @@ export const UserList = (props: UserListProps) => {
                                 <p>{user.lastname}</p>
                             </div>
                                 <a className="group/edit invisible hover:bg-slate-200 group-hover/item:visible" href="#">
-                                <span className="group-hover/edit:text-gray-700">Call</span>
+                                <span className="group-hover/edit:text-gray-700">Join</span>
                                 <svg className="group-hover/edit:translate-x-0.5 group-hover/edit:text-slate-500">
                                 </svg>
                             </a>
