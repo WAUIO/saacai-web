@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Layout>
+    <Layout title="SaaC.AI">
       <div className="App text-3xl font-bold underline">
         <p className="read-the-docs">
           Click on the Vite and React logos to learn more
