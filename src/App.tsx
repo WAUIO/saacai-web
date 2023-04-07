@@ -26,6 +26,7 @@ function App() {
           Write message to get started
         </p>
       </div>
+      <InputMessage/>
     </Layout>
   )
 }
